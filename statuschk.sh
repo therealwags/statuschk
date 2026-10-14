@@ -102,7 +102,7 @@ showUnattendedLog() {
 ## Updated Related - End ##
 
 makePretty() {
-  printf "\n%s\n" "##################################################################"
+  printf "\n%s\n\n" "****************************************************************************************"
 }
 
 checkstatus() {
@@ -119,6 +119,7 @@ checkstatus() {
 showupdates() {
   clear
   showUnattendedLog
+  makePretty
   checkUpdates
 }
 
