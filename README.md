@@ -1,5 +1,7 @@
 # ---------------------------------------------------------------------------
-# statuschck.sh script - Display current status of pihole, fail2ban, updates
+# statuschk.sh script - Display current status of pihole, fail2ban, updates
 # © 2026 Wags
-# Usage: statuschck.sh [ -h | help ]
+# Usage:
+#         statuschk.sh [ -h | help ]
+#         statuschk.sh [ -v | version ]
 # ---------------------------------------------------------------------------
