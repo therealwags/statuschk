@@ -10,7 +10,7 @@
 
 ### Constants ###
 PROGNAME=${0##*/}
-VERSION="0.5"
+VERSION="1.0"
 
 ### Functions ###
 
