@@ -50,13 +50,13 @@ menu() {
 
     case $func in
       status)
-        checkstatus ;;
+        checkstatus; exit 0 ;;
       update)
-        showupdates ;;
+        showupdates; exit 0 ;;
       help)
         help_message; exit 0 ;;
       *)
-        printf "ERROR: Invalid option %s\n" "$REPLY" ;;
+        printf "ERROR: Invalid option %s\n" "$REPLY"; exit 1 ;;
     esac
   
   done
