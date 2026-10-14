@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # ---------------------------------------------------------------------------
-# status-check.sh script - Display current status of pihole, fail2ban, updates
+# statuschck.sh script - Display current status of pihole, fail2ban, updates
 # © 2026 Wags
-# Usage: status-check.sh [ -h | help ]
+# Usage: statuschck.sh [ -h | help ]
 # ---------------------------------------------------------------------------
 
 ### Constants ###
