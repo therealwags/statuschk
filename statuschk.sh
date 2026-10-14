@@ -107,9 +107,13 @@ makePretty() {
 
 checkstatus() {
   clear
+  makePretty
   getFail2banStatus
+  makePretty
   getPiholeStatus
+  makePretty
   getMemoryStatus
+  makePretty
 }
 
 showupdates() {
