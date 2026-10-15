@@ -10,9 +10,9 @@
 #         statuschk.sh [ -v | version ]
 #
 # Notes:
-#         v0.5: initial script design that always ran everything
-#         v1.0: added getops options h (help) & v (version)
 #         v1.5: added menu and getops options u (updates) & s (status)
+#         v1.0: added getops options h (help) & v (version)
+#         v0.5: initial script design that always ran everything
 # ---------------------------------------------------------------------------
 
 set -euo pipefail
@@ -139,6 +139,7 @@ if [ "$#" -eq 0 ]; then
   menu
 fi
 
+# Provide options
 while getopts ":hvsu" opt; do
   case $opt in
     h)
@@ -151,7 +152,6 @@ while getopts ":hvsu" opt; do
       showupdates ;;
     \?)
       printf "ERROR: Invalid option -%s\n" "$OPTARG" 
-      # echo "ERROR: Invalid option -$OPTARG"
       help_message
       exit 1
       ;;
