@@ -14,6 +14,8 @@
 #         v1.0: added getops options h (help) & v (version)
 #         v0.5: initial script design that always ran everything
 # ---------------------------------------------------------------------------
+# TODO: modularize the script
+# ---------------------------------------------------------------------------
 
 set -euo pipefail
 ### debug
