@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
 # ---------------------------------------------------------------------------
-# statuschk.sh script - Display current status of pihole, fail2ban, updates
+# statuschk.sh script - Display status of pihole, fail2ban, and updates
 # © 2026 Wags
 # Usage:
 #         statuschk.sh [ -s | status ]
 #         statuschk.sh [ -u | updates ]
+#         statuschk.sh [ -m | memory info ]
 #         statuschk.sh [ -h | help ]
 #         statuschk.sh [ -v | version ]
 #
@@ -29,7 +30,7 @@ VERSION="1.5"
 
 ## Help Related - Start ##
 usage() {
-  printf "%s\n" "Usage: ${PROGNAME} [ -suhv ]"
+  printf "%s\n" "Usage: ${PROGNAME} [ -sumhv ]"
 }
 
 help_message() {
@@ -42,8 +43,9 @@ help_message() {
   $(usage)
 
   Options:
-  -s  Display status of Fail3Ban and Pi-Hole
-  -u  Display recent updates
+  -s  Display status of services: fail2ban and Pi-Hole
+  -u  Display available updates and recent upgrades.
+  -m  Display memory information.
   -h  Display this help message and exit.
   -v  Display current version of this utility.
 
@@ -57,7 +59,7 @@ menu() {
   clear
   PS3="Enter a number: "
 
-  select func in status update help; do
+  select func in status update help quit; do
 
     case $func in
       status)
@@ -66,6 +68,8 @@ menu() {
         showupdates; exit 0 ;;
       help)
         help_message; exit 0 ;;
+      quit)
+        printf "Good-bye!"; exit 0 ;;
       *)
         printf "ERROR: Invalid option %s\n" "$REPLY"; exit 1 ;;
     esac
@@ -142,7 +146,7 @@ if [ "$#" -eq 0 ]; then
 fi
 
 # Provide options
-while getopts ":hvsu" opt; do
+while getopts ":hvsum" opt; do
   case $opt in
     h)
       help_message ;;
@@ -152,6 +156,8 @@ while getopts ":hvsu" opt; do
       checkstatus ;;
     u)
       showupdates ;;
+    m)
+      getMemoryStatus ;;
     \?)
       printf "ERROR: Invalid option -%s\n" "$OPTARG" 
       help_message
