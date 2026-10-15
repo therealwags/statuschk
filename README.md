@@ -1,10 +1,13 @@
 statuschk.sh script - Display current status of pihole, fail2ban, updates
+
 © 2026 Wags
+
 Usage:
         statuschk.sh [ -s | status ]
         statuschk.sh [ -u | updates ]
         statuschk.sh [ -h | help ]
         statuschk.sh [ -v | version ]
+
 
 Notes:
         v1.5: added menu and getops options u (updates) & s (status)
