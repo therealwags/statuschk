@@ -8,7 +8,16 @@
 #         statuschk.sh [ -u | updates ]
 #         statuschk.sh [ -h | help ]
 #         statuschk.sh [ -v | version ]
+#
+# Notes:
+#         v0.5: initial script design that always ran everything
+#         v1.0: added getops options h (help) & v (version)
+#         v1.5: added menu and getops options u (updates) & s (status)
 # ---------------------------------------------------------------------------
+
+set -euo pipefail
+### debug
+#set -x
 
 ### Constants ###
 PROGNAME=${0##*/}
@@ -118,18 +127,14 @@ checkstatus() {
 
 showupdates() {
   clear
+  makePretty
   showUnattendedLog
   makePretty
   checkUpdates
+  makePretty
 }
 
-set -euo pipefail
-### debug
-#set -x
-
-### Clear screen ###
-#clear
-
+# If no options detected, show menu
 if [ "$#" -eq 0 ]; then
   menu
 fi
