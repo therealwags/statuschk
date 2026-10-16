@@ -22,6 +22,7 @@
 
 set -euo pipefail
 ### debug
+
 #set -x
 
 ### Constants ###
