@@ -18,7 +18,7 @@ menu() {
       help)
         help_message; exit 0 ;;
       quit)
-        printf "Good-bye!"; exit 0 ;;
+        make_pretty; printf "Good-bye!\n"; exit 0 ;;
       *)
         printf "ERROR: Invalid option %s\n" "$REPLY"; exit 1 ;;
     esac
