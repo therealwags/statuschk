@@ -11,6 +11,7 @@
 #         statuschk.sh [ -v | version ]
 #
 # Notes:
+#         v1.6: added option m to display memory information (free)
 #         v1.5: added menu and getops options u (updates) & s (status)
 #         v1.0: added getops options h (help) & v (version)
 #         v0.5: initial script design that always ran everything
@@ -24,7 +25,7 @@ set -euo pipefail
 
 ### Constants ###
 PROGNAME=${0##*/}
-VERSION="1.5"
+VERSION="1.6"
 
 ### Functions ###
 

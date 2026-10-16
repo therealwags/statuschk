@@ -9,9 +9,9 @@ Usage:
         statuschk.sh [ -h | help ]
         statuschk.sh [ -v | version ]
 
-
 Notes:
 
+        v1.6: added option m to display memory information (free)
         v1.5: added menu and getops options u (updates) & s (status)
         v1.0: added getops options h (help) & v (version)
         v0.5: initial script design that always ran everything
