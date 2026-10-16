@@ -6,7 +6,7 @@
 # © 2026 Wags
 #
 # Usage:
-#         statuschk.sh [ -s | status ]
+#         statuschk.sh [ -s | services ]
 #         statuschk.sh [ -u | updates ]
 #         statuschk.sh [ -m | memory info ]
 #         statuschk.sh [ -h | help ]
