@@ -1,7 +1,8 @@
 # StatusChk
 Display current status of the Pihole and Fail2Ban services, any pending updates, and recent unattended upgrades
 
-## Usage: [^1]
+## Usage: 
+[^1]
 - statuschk.sh [ -s | status ]
 - statuschk.sh [ -u | updates ]
 - statuschk.sh [ -m | memory info ]
@@ -16,8 +17,9 @@ Display current status of the Pihole and Fail2Ban services, any pending updates,
 - v0.5: initial script design that always ran everything
 
 *© 2026 Wags*
+---
 
-[^1] Adding the following to *.bashrc* should allow for using *statuschk* command anywhere
+[^1]: Adding the following to *.bashrc* should allow for using *statuschk* command anywhere
 
     if [ "$#" -eq 0 ]; then
         bash { path to script }
