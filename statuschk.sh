@@ -53,7 +53,7 @@ help_message() {
   $(usage)
 
   Options:
-  -s  Display status of services: Pi-Hole ans fail2ban.
+  -s  Display status of services: Pi-Hole and fail2ban.
   -u  Display available updates and recent upgrades.
   -m  Display memory information.
   -h  Display this help message and exit.

@@ -4,12 +4,6 @@
 # menu module
 # ---------------------------------------------------------------------------
 
-
-### Source modules ###
-source ./statuschk.sh
-source ./updates.sh
-source ./services.sh
-
 menu() {
   clear
   PS3="Enter a number: "
