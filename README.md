@@ -1,14 +1,15 @@
 # StatusChk
-Display current status of the Pihole and Fail2Ban services, any pending updates, and recent unattended upgrades
+Display current status of the Pi-Hole and fail2ban services, any pending updates, and recent unattended upgrades
 
 ## Usage: [^1]
-- statuschk.sh [ -s | status ]
+- statuschk.sh [ -s | services ]
 - statuschk.sh [ -u | updates ]
 - statuschk.sh [ -m | memory info ]
 - statuschk.sh [ -h | help ]
 - statuschk.sh [ -v | version ]
 
 ### Notes:
+- v2.0: split into modules
 - v1.7: reformat README using markdown
 - v1.6: added option m to display memory information (free)
 - v1.5: added menu and getops options u (updates) & s (status)
