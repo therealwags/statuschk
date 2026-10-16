@@ -15,9 +15,8 @@ Display current status of the Pihole and Fail2Ban services, any pending updates,
 - v1.0: added getops options h (help) & v (version)
 - v0.5: initial script design that always ran everything
 
-*© 2026 Wags*
+###### *© 2026 Wags*
 
----
 [^1]: Adding the following to *.bashrc* may allow for using *statuschk* command, with or without options, anywhere
 
     if [ "$#" -eq 0 ]; then
