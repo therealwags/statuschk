@@ -11,6 +11,7 @@
 #         statuschk.sh [ -v | version ]
 #
 # Notes:
+#         v1.7: reformat README using markdown
 #         v1.6: added option m to display memory information (free)
 #         v1.5: added menu and getops options u (updates) & s (status)
 #         v1.0: added getops options h (help) & v (version)
@@ -25,7 +26,7 @@ set -euo pipefail
 
 ### Constants ###
 PROGNAME=${0##*/}
-VERSION="1.6"
+VERSION="1.7"
 
 ### Functions ###
 
