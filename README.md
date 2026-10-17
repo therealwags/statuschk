@@ -1,5 +1,7 @@
 # StatusChk
-Display current status of the Pi-Hole and fail2ban services, any pending updates, and recent unattended upgrades
+Display current status of the Pi-Hole and fail2ban services, any pending updates, and recent unattended upgrades.
+
+###### Note: Designed for use with a Debian 13 (trixie) server with the named services installed and in use.
 
 ## Usage: [^1]
 - statuschk.sh [ -s | services ]
